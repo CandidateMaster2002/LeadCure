@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEADLOCK™ | Clinical Conversion Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --clinic-emerald: #10b981;
+        --sterile-white: #fafafa;
+        --ease-clinical: cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #0f172a;
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .bg-clinic-grid {
+        background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+
+      @keyframes scanLine {
+        0% { transform: translateY(-100%); opacity: 0; }
+        10% { opacity: 0.8; }
+        90% { opacity: 0.8; }
+        100% { transform: translateY(500%); opacity: 0; }
+      }
+
+      .scanning-bar::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--clinic-emerald), transparent);
+        animation: scanLine 4s linear infinite;
+        z-index: 10;
+        pointer-events: none;
+      }
+
+      /* Entrance Animation Base */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1.2s var(--ease-clinical), transform 1.2s var(--ease-clinical);
+        will-change: transform, opacity;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Fixed: WhatsApp Message Reveal Animations */
+      @keyframes revealIn {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .animate-reveal {
+        animation: revealIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(226, 232, 240, 0.6);
+      }
+
+      .clinic-marker {
+        position: relative;
+      }
+      .clinic-marker::before {
+        content: '+';
+        position: absolute;
+        top: -12px; left: -12px;
+        color: #cbd5e1;
+        font-size: 24px;
+        font-weight: 300;
+        opacity: 0.5;
+      }
+
+      .text-gradient {
+        background: linear-gradient(135deg, #0f172a 0%, #475569 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      .btn-glow:hover {
+        box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+      }
+
+      @keyframes btn-breath {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+      .cta-breath {
+        animation: btn-breath 4s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
