@@ -14,7 +14,7 @@ export const PrecisionPath: React.FC = () => {
     <section className="py-12 md:py-20 bg-white overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4">
         <Reveal className="text-center mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-6xl font-bold tracking-tight text-slate-900">How LEADLOCK™ Works</h2>
+          <h2 className="text-3xl md:text-6xl font-bold tracking-tight text-slate-900">How LEADCURE™ Works</h2>
         </Reveal>
         <div className="relative flex flex-col md:flex-row items-center justify-between gap-2 md:gap-2">
           {PATH_STEPS.map((step, i, arr) => (

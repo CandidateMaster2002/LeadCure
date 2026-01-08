@@ -92,7 +92,7 @@ export const Offer: React.FC = () => {
 
             {/* Urgency text */}
             <p className="text-[10px] sm:text-xs text-emerald-300/80 italic animate-pulse-slow max-w-md mx-auto pt-1">
-              Join 100+ clinics already using LeadLock to grow their practice
+              Join 100+ clinics already using LeadCure to grow their practice
             </p>
 
           </div>

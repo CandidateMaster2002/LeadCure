@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
   onClick={(e) => scrollToSection(e, 'home')}
   className="text-lg md:text-xl font-semibold tracking-wide text-slate-900 shrink-0 hover:opacity-90 transition-opacity"
 >
-  LEADLOCK<span className="text-slate-500">™</span>
+  LEADCURE<span className="text-slate-500">™</span>
 </a>
 
 

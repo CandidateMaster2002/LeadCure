@@ -3,7 +3,7 @@ import { Feature, Bonus, ComparisonRow, FAQItem, Testimonial } from './types';
 
 export const WhatsAppContactInfo = {
   phoneNumber: '+919528523430',
-  prefilledMessage: 'Hi, I am interested in 30 days free LEADLOCK™ for my clinic. Please share next steps.'
+  prefilledMessage: 'Hi, I am interested in 30 days free LEADCURE™ for my clinic. Please share next steps.'
 };
 
 
@@ -60,14 +60,14 @@ export const BONUSES: Bonus[] = [
 export const FAQ_DATA = [
   {
     id: 1,
-    question: "What exactly does LEADLOCK™ do for my clinic?",
-    answer: "LEADLOCK™ turns WhatsApp inquiries into booked consultations automatically.\n\nIt replies instantly, qualifies patients, books appointments, sends reminders, and follows up on missed inquiries, so conversions happen even when your team is busy or offline.\n\nThis is not marketing. It’s conversion infrastructure."
+    question: "What exactly does LEADCURE™ do for my clinic?",
+    answer: "LEADCURE™ turns WhatsApp inquiries into booked consultations automatically.\n\nIt replies instantly, qualifies patients, books appointments, sends reminders, and follows up on missed inquiries, so conversions happen even when your team is busy or offline.\n\nThis is not marketing. It’s conversion infrastructure."
   },
  // Correct usage in your data array:
 {
   id: 2,
   question: "Is this just a chatbot?",
-  answer: "No.\n\nChatbots answer questions. LEADLOCK™ runs a booking system.\nIt handles:\n• Instant replies\n• Qualification\n• Appointment booking\n• Follow-ups\n• Reminders\n• Human handoff\n\nThink of it as a digital front desk that never sleeps, not a bot."
+  answer: "No.\n\nChatbots answer questions. LEADCURE™ runs a booking system.\nIt handles:\n• Instant replies\n• Qualification\n• Appointment booking\n• Follow-ups\n• Reminders\n• Human handoff\n\nThink of it as a digital front desk that never sleeps, not a bot."
 },
   {
     id: 3,

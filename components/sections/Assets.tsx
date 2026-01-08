@@ -68,7 +68,7 @@ export const Assets: React.FC = () => {
             🎁 Included Bonuses
           </h2>
           <p className="mt-3 text-slate-600 text-base md:text-lg">
-            Everything you need to run LEADLOCK™ smoothly - without extra cost
+            Everything you need to run LEADCURE™ smoothly - without extra cost
           </p>
         </div>
 
