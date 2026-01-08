@@ -45,10 +45,10 @@ const GrowthGap: React.FC = () => {
             </ul>
           </div>
 
-          {/* LEADCURE Clinics */}
+          {/* LeadCure Clinics */}
           <div className="border border-gray-900 rounded-2xl p-8 bg-gray-50">
             <h3 className="text-xl font-semibold text-gray-900 mb-6">
-              LEADCURE™ Clinics
+              LeadCure™ Clinics
             </h3>
 
             <ul className="space-y-4 text-gray-800">
