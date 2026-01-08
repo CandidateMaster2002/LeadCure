@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../public/images/Dashboard.JPG";
+// import "../../public/images/Dashboard.JPG";
 
 // Types
 interface WhatsAppMessage {
@@ -298,7 +298,7 @@ export const Protocols: React.FC = () => {
         {feature.id === 6 ? (
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
             <img
-              src="../../public/images/Dashboard.JPG"
+              src="/images/Dashboard.JPG"
               alt="Clinical Dashboard"
               className="w-full h-auto object-cover"
             />
