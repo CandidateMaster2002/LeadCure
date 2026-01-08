@@ -49,13 +49,16 @@ export const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-[100] bg-white border-b border-slate-100 px-4 md:px-8 shadow-sm">
       <div className="max-w-[1400px] mx-auto h-16 flex items-center justify-between">
         {/* Logo */}
-      <a
+<a
   href="#home"
   onClick={(e) => scrollToSection(e, 'home')}
-  className="text-lg md:text-xl font-semibold tracking-wide text-slate-900 shrink-0 hover:opacity-90 transition-opacity"
+  className="text-lg md:text-xl font-semibold tracking-wide shrink-0 transition-opacity hover:opacity-90"
 >
-  LEADCURE<span className="text-slate-500">™</span>
+  <span className="text-slate-900">Lead</span>
+  <span className="text-emerald-600">Cure</span>
+  <span className="text-slate-500 align-super text-xs ml-0.5">™</span>
 </a>
+
 
 
         {/* Desktop Nav */}

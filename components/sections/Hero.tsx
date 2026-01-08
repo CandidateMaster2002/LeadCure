@@ -13,7 +13,9 @@ export const Hero: React.FC = () => {
       <div className="relative text-center max-w-4xl mb-12">
         <Reveal delay={100}><h1 className="text-gradient text-4xl md:text-7xl font-bold mb-6 tracking-tighter leading-[0.8]">They Replied First. <br />
 They Booked the Patient.</h1></Reveal>
-        <Reveal delay={200}><p className="text-xl md:text-2xl text-slate-700 max-w-2xl mx-auto font-medium leading-relaxed">Every 5-minute delay costs upto 8% of patients. <span className="text-slate-900 font-bold border-b-2 border-emerald-400">LEADCURE™</span> responds instantly-24/7.</p></Reveal>
+        <Reveal delay={200}><p className="text-xl md:text-2xl text-slate-700 max-w-2xl mx-auto font-medium  leading-relaxed">Every 5-minute delay costs upto 8% of patients. <span className="text-slate-900 font-bold">Lead</span>
+  <span className="text-emerald-600 font-bold">Cure</span>
+  <span className="text-slate-500 align-super text-xs ml-0.5 font-bold">™</span> responds instantly-24/7.</p></Reveal>
       </div>
 
       {/* Diagnostics */}
